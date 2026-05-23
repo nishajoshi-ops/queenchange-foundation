@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generated Page</title>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Queens Of Change Foundation</title>
+  <link rel="stylesheet" href="global.css">
+  <style id="sections-styles">
+/* CSS for section section:Header */
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 80px;
+    padding: 0 40px;
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .logo-img {
+    width: 82px;
+    height: 54px;
+    object-fit: cover;
+    border-radius: 100px;
+  }
+
+  .site-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2e0400;
+    margin: 0;
+  }
+
+  .main-nav {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .nav-link {
+    font-size: 16px;
+    color: #000000;
+    transition: color 0.3s ease;
+  }
+
+  .nav-link:hover {
+    color: #ff6f61;
+  }
+
+  @media (max-width: 768px) {
+    .site-header {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      gap: 20px;
+    }
+    .main-nav {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+/* CSS for section section:Hero */
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 60px;
+    gap: 60px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    flex: 1;
+    max-width: 520px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2e0400;
+    line-height: 1.2;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    color: #12012c;
+    line-height: 1.6;
+  }
+
+  .search-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .search-input {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #000000;
+    width: 100%;
+  }
+
+  .search-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .search-input:focus {
+    outline: none;
+    border-color: #ff6f61;
+  }
+
+  .hero-actions {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .hero-image-wrapper {
+    flex: 1;
+    max-width: 520px;
+    background-color: rgba(217, 217, 217, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    width: 100%;
+    height: 443px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 992px) {
+    .hero-container {
+      flex-direction: column;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .hero-content {
+      align-items: center;
+    }
+    .hero-actions {
+      flex-direction: column;
+      width: 100%;
+      max-width: 360px;
+    }
+    .btn-primary, .btn-secondary {
+      width: 100%;
+    }
+    .hero-image-wrapper {
+      width: 100%;
+    }
+  }
+
+/* CSS for section section:WhatWeDo */
+.what-we-do-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+  }
+
+  .section-header-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 24px;
+    max-width: 1100px;
+  }
+
+  .section-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+  }
+
+  .section-subtitle {
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .features-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .feature-card {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+
+  .feature-image-container {
+    position: relative;
+    width: 100%;
+    height: 340px;
+  }
+
+  .feature-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .feature-tag {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #ffe5e4;
+    color: #000000;
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+  }
+
+  .feature-title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .feature-desc {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1024px) {
+    .features-grid {
+      gap: 20px;
+    }
+    .feature-card {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .what-we-do-container {
+      padding: 40px 20px;
+    }
+    .feature-card {
+      width: 100%;
+    }
+  }
+
+/* CSS for section section:Reviews */
+.reviews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+  }
+
+  .reviews-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 340px;
+    background-color: #fff0f0;
+    border-radius: 6px;
+    padding: 24px;
+  }
+
+  .reviewer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .reviewer-name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+  }
+
+  .rating-stars {
+    height: 10px;
+  }
+
+  .review-text {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.5;
+  }
+
+  @media (max-width: 1024px) {
+    .reviews-grid {
+      gap: 20px;
+    }
+    .review-card {
+      width: calc(50% - 10px);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .reviews-container {
+      padding: 40px 20px;
+    }
+    .review-card {
+      width: 100%;
+    }
+  }
+
+/* CSS for section section:GetInvolved */
+.get-involved-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px;
+    gap: 60px;
+  }
+
+  .form-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1100px;
+    gap: 24px;
+  }
+
+  .involvement-form {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    width: 100%;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    flex: 1;
+  }
+
+  .form-label {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+  }
+
+  .form-input {
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    padding: 12px 16px;
+    font-size: 16px;
+    color: #000000;
+    width: 100%;
+  }
+
+  .form-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .form-input:focus {
+    outline: none;
+    border-color: #ff6f61;
+  }
+
+  .form-hint {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .chip-group {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .chip {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #000000;
+    transition: background-color 0.2s;
+  }
+
+  .chip:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  .chip input:checked + span {
+    font-weight: bold;
+    color: #ff6f61;
+  }
+
+  .form-actions-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .get-involved-container {
+      padding: 40px 20px;
+    }
+    .form-row {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .form-actions-center {
+      flex-direction: column;
+    }
+    .btn-primary, .btn-secondary {
+      width: 100%;
+    }
+  }
+
+/* CSS for section section:Footer */
+.site-footer {
+    background-color: #ff6f61;
+    color: #f6f6f8;
+    padding: 60px 32px 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .footer-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1376px;
+    gap: 60px;
+    flex-wrap: wrap;
+  }
+
+  .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 150px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 151px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 8px; /* Assuming some border radius, though JSON says 0, visual might differ. Sticking to JSON 0px */
+    border-radius: 0;
+  }
+
+  .footer-brand-name {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+
+  .footer-links-container {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    flex-wrap: wrap;
+    flex: 1;
+    justify-content: space-around;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-col-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ebedff;
+    margin-bottom: 8px;
+  }
+
+  .footer-link-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-link-list a {
+    font-size: 14px;
+    color: #f6f6f8;
+    transition: opacity 0.3s ease;
+  }
+
+  .footer-link-list a:hover {
+    opacity: 0.8;
+  }
+
+  .contact-col {
+    max-width: 264px;
+  }
+
+  .footer-registered-text {
+    font-size: 12px;
+    margin-top: 16px;
+    opacity: 0.9;
+  }
+
+  .footer-bottom {
+    width: 100%;
+    max-width: 1376px;
+    text-align: center;
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+  }
+
+  @media (max-width: 992px) {
+    .footer-main {
+      flex-direction: column;
+      align-items: center;
+    }
+    .footer-links-container {
+      width: 100%;
+      justify-content: flex-start;
+      gap: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .site-footer {
+      padding: 40px 20px 20px 20px;
+    }
+    .footer-links-container {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+  </style>
+  <script src="global.js" defer></script>
+</head>
+<body>
+<section id="section-header">
+  <div class="page-container">
+    <header class="site-header">
+      <div class="logo-container">
+        <img src="images/e80b2adbcfc95cb748e8b3db56cd8d8e5ca846ed.png" alt="Queens Of Change Foundation Logo" class="logo-img">
+        <h1 class="site-title">Queens Of Change Foundation</h1>
+      </div>
+      <nav class="main-nav">
+        <a href="#section-what-we-do" class="nav-link">About</a>
+        <a href="#section-what-we-do" class="nav-link">Programs</a>
+        <a href="#section-get-involved" class="nav-link">How to Help</a>
+        <a href="#section-get-involved" class="nav-link">Get Involved</a>
+      </nav>
+    </header>
+  </div>
+</section>
+<section id="section-hero">
+  <div class="page-container">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h2 class="hero-title">Empowering Women Through Change</h2>
+        <p class="hero-description">
+          Small actions. Big change. We support children and families through education, mealQueens of Change Foundation is dedicated to breaking stigma around menstruation and empowering underprivileged women across India with dignity, ii, and opportunities.s, and safe community programs.
+        </p>
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Search programs">
+        </div>
+        <div class="hero-actions">
+          <button class="btn-secondary">Donate</button>
+          <button class="btn-primary">Join Now</button>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="images/9e3fdd2682d148045c390b79760d185eeef6665e.png" alt="Empowering Women" class="hero-image">
+      </div>
+    </div>
+    <img src="images/161_712.svg" alt="" class="section-divider" aria-hidden="true">
+  </div>
+</section>
+<section id="section-what-we-do">
+  <div class="page-container">
+    <div class="what-we-do-container">
+      <div class="section-header-center">
+        <h2 class="section-title">What We Do</h2>
+        <p class="section-subtitle">Our multi-faceted approach tackles menstrual health, education, and women's empowerment</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature Card 1 -->
+        <div class="feature-card">
+          <div class="feature-image-container">
+            <img src="images/601e8a80bc301e7b9fe9e376e1384e61f5d070cd.png" alt="Sanitary Pad Distribution" class="feature-image">
+            <div class="feature-tag">Most Requested</div>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Sanitary Pad Distribution</h3>
+            <p class="feature-desc">Providing free sanitary pads to underprivileged girls and women, ensuring menstrual health and dignity.</p>
+          </div>
+        </div>
+
+        <!-- Feature Card 2 -->
+        <div class="feature-card">
+          <div class="feature-image-container">
+            <img src="images/ab171cfc2debbed5cc604fcbb672a7fcb1e03d0b.png" alt="Health Education" class="feature-image">
+            <div class="feature-tag">Most Requested</div>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Health Education</h3>
+            <p class="feature-desc">Breaking stigma through comprehensive education about menstrual health, hygiene, and reproductive rights.</p>
+          </div>
+        </div>
+
+        <!-- Feature Card 3 -->
+        <div class="feature-card">
+          <div class="feature-image-container">
+            <img src="images/6e0d961b9616971a4f39e8453c4d2b2a4aeebf8e.png" alt="Community Outreach" class="feature-image">
+            <div class="feature-tag">Most Requested</div>
+          </div>
+          <div class="feature-content">
+            <h3 class="feature-title">Community Outreach</h3>
+            <p class="feature-desc">Direct engagement with marginalized communities to understand and address their specific needs and challenges.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="images/161_810.svg" alt="" class="section-divider" aria-hidden="true">
+  </div>
+</section>
+<section id="section-reviews">
+  <div class="page-container">
+    <div class="reviews-container">
+      <div class="section-header-center">
+        <h2 class="section-title">What Our Community Says</h2>
+        <p class="section-subtitle">Real stories from volunteers, parents, and partners.</p>
+      </div>
+
+      <div class="reviews-grid">
+        <!-- Review Card 1 -->
+        <div class="review-card">
+          <div class="reviewer-info">
+            <span class="reviewer-name">Amina K.</span>
+            <img src="images/161_865.svg" alt="5 Stars" class="rating-stars">
+          </div>
+          <p class="review-text">Volunteering with queen change foundation was inspiring. The training made it easy to help right away.</p>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="review-card">
+          <div class="reviewer-info">
+            <span class="reviewer-name">Samuel R.</span>
+            <img src="images/161_874.svg" alt="5 Stars" class="rating-stars">
+          </div>
+          <p class="review-text">The mentorship program changed how my child studies. Consistent support truly matters.</p>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="review-card">
+          <div class="reviewer-info">
+            <span class="reviewer-name">Priya S.</span>
+            <img src="images/161_883.svg" alt="5 Stars" class="rating-stars">
+          </div>
+          <p class="review-text">Transparent reporting and clear impact helped us feel confident in donating.</p>
+        </div>
+      </div>
+    </div>
+    <img src="images/161_886.svg" alt="" class="section-divider" aria-hidden="true">
+  </div>
+</section>
+<section id="section-get-involved">
+  <div class="page-container">
+    <div class="get-involved-container">
+      <div class="form-header">
+        <h2 class="section-title">Get Involved</h2>
+        <p class="section-subtitle">Tell us what you're interested in, and we'll follow up with next steps.</p>
+      </div>
+
+      <form class="involvement-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-input" placeholder="e.g., Jordan Lee">
+            <span class="form-hint">Required</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input type="email" class="form-input" placeholder="e.g., jordan@email.com">
+            <span class="form-hint">We'll only use this to contact you</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label">I want to…</label>
+            <div class="chip-group">
+              <label class="chip">
+                <input type="radio" name="intent" value="volunteer" class="sr-only">
+                <span>Volunteer</span>
+              </label>
+              <label class="chip">
+                <input type="radio" name="intent" value="donate" class="sr-only">
+                <span>Donate</span>
+              </label>
+              <label class="chip">
+                <input type="radio" name="intent" value="partner" class="sr-only">
+                <span>Partner with us</span>
+              </label>
+            </div>
+            <span class="form-hint">Choose one</span>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Message</label>
+            <input type="text" class="form-input" placeholder="Anything you'd like us to know (optional)">
+          </div>
+        </div>
+
+        <div class="form-actions-center">
+          <button type="button" class="btn-secondary">Donate</button>
+          <button type="submit" class="btn-primary">Join Now</button>
+        </div>
+      </form>
+    </div>
+    <img src="images/161_943.svg" alt="" class="section-divider" aria-hidden="true">
+  </div>
+</section>
+<section id="section-footer">
+  <div class="page-container">
+    <footer class="site-footer">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <img src="images/e80b2adbcfc95cb748e8b3db56cd8d8e5ca846ed.png" alt="Queens Of Change Foundation Logo" class="footer-logo">
+          <p class="footer-brand-name">Queens of change foundation</p>
+        </div>
+        
+        <div class="footer-links-container">
+          <div class="footer-col">
+            <h4 class="footer-col-title">Useful Link</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">about</a></li>
+              <li><a href="#">Program</a></li>
+              <li><a href="#">How to help</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">About Us</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">Services</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Term & condition</a></li>
+              <li><a href="#">Return Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4 class="footer-col-title">Why Us</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">cancel & Refund</a></li>
+              <li><a href="#">certified Platform</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col contact-col">
+            <h4 class="footer-col-title">Get Involved</h4>
+            <ul class="footer-link-list">
+              <li><a href="#">Make a Donation</a></li>
+              <li><a href="tel:+18002546625">+1800 254 6625</a></li>
+            </ul>
+            <p class="footer-registered-text">Registered under The Indian Society Act 1860</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Queens of Change Foundation. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+</section>
+</body>
+</html>
